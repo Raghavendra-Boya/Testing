@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio & Video</title>
+</head>
+
+<body>
+
+    <script>
+
+        //with poarameter and with out parameter and return statement
+        var num1=10;
+        var num2=20;
+        function GFG() {
+            var result =  num1 * num2;
+            console.log(result);
+        }
+
+        GFG();
+
+        // Variable function
+
+        var a = 5;
+
+        var X = function(a,b){
+            var result = a * b;
+            console.log(result);
+        }
+        X(5,20)
+        console.log(typeof(X));
+
+        // Higher order function
+
+        function higherOrderFunction(arr){
+            console.log("this is higher order function");
+            arr();
+        }
+        function callbackFunction(){
+            console.log("callback");
+        }
+        higherOrderFunction(callbackFunction)
+
+        //For each   
+
+        var array = [1,2,3,4,5,6]
+        array.forEach(function(element,key){
+            document.write(`${key}:${element}<br>`)
+        })
+
+        
+        
+
+    </script>
+
+</body>
+
+</html>

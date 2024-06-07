@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+        }
+        .headerlogo {
+            width: 20%;
+        }
+        .headerlogo img {
+            width: 100%;
+        }
+        .navlinks {
+            display: flex;
+            justify-content: space-evenly;
+            width: 80%;
+        }
+        .navlinks a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        @media (min-width: 1024px) {
+            .header {
+                flex-direction: row;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 1023px) {
+            .header {
+                flex-direction: row;
+            }
+            .navlinks {
+                width: 75%;
+            }
+            .headerlogo {
+                width: 25%;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .header {
+                flex-direction: column;
+            }
+            .headerlogo {
+                width: 50%;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            .navlinks {
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+            }
+            .navlinks a {
+                margin: 10px 0;
+            }
+        }
+
+        .footer {
+            display: flex;
+        }
+        .footer div {
+            flex: 1;
+        }
+        .footercompany a {
+            text-decoration: none;
+            color: black;
+        }
+        /* .footercompany {
+            display: flex;
+            flex-direction: column;
+        } */
+
+        @media (min-width: 768px) and (max-width: 1023px) {
+            .footer {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .footer div {
+                flex: 1 1 45%;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .footer {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .footer div {
+                flex: 1 1 100%;
+                margin-bottom: 20px;
+            }
+        }
+
+        .main{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .container{
+            width: 100%;
+            flex: 1 1 30%;
+            margin: 10px;
+        }
+        .men-womenfashion{
+            text-align: center;
+        }
+        .anchor{
+            display: flex;
+            justify-content: space-around;
+        }
+        .image img{
+            width: 100%;
+
+        }
+        @media (min-width:786px) and (max-width:1023px){
+            .container{
+                flex: 1 1 45%;
+            }
+        }
+        @media (max-width:786px){
+            .container{
+                flex: 1 1 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="headerlogo">
+            <img src="https://lms.achieversit.com/lms-ci/assets/images/logo.png" alt="Header Logo">
+        </div>
+        <nav class="navlinks">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Courses</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="main">
+        <section class="container">
+            <div class="men-womenfashion">
+                <p>Price: $100</p>
+                <p>Coffe</p>
+            </div>
+            <div class="image">
+                <img src="https://images.pexels.com/photos/24613542/pexels-photo-24613542/free-photo-of-flat-white-please.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+            </div>
+            <div class="anchor">
+                <a href="#">See More</a>
+                <a href="#">Buy Now</a>
+            </div>
+        </section>
+        <section class="container">
+            <div class="men-womenfashion">
+                <p>Price: $100</p>
+                <p>Coffe</p>
+            </div>
+            <div class="image">
+                <img src="https://images.pexels.com/photos/24613542/pexels-photo-24613542/free-photo-of-flat-white-please.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+            </div>
+            <div class="anchor">
+                <a href="#">See More</a>
+                <a href="#">Buy Now</a>
+            </div>
+        </section>
+        <section class="container">
+            <div class="men-womenfashion">
+                <p>Price: $100</p>
+                <p>Coffe</p>
+            </div>
+            <div class="image">
+                <img src="https://images.pexels.com/photos/24613542/pexels-photo-24613542/free-photo-of-flat-white-please.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+            </div>
+            <div class="anchor">
+                <a href="#">See More</a>
+                <a href="#">Buy Now</a>
+            </div>
+        </section>
+    </section>
+
+    <footer class="footer">
+        <div class="footerlogo">
+            <img src="https://lms.achieversit.com/lms-ci/assets/images/logo.png" alt="Footer Logo">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas veritatis ullam cumque quis, eaque facilis sunt sequi. Asperiores, aliquam veniam!</p>
+        </div>
+        <div class="footercompany">
+            <h2>Company</h2>
+            <div>
+                <p>About Us</p>
+                <p>Contact Us</p>
+                <p>News and Blogs</p>
+            </div>
+        </div>
+        <div class="footertrending">
+            <h2>Trending Courses</h2>
+            <div>
+                <p>Java Fullstack</p>
+                <p>Python Fullstack</p>
+                <p>UI Developer</p>
+                <p>Angular</p>
+                <p>React</p>
+            </div>
+        </div>
+        <div class="contact">
+            <h2>Contact</h2>
+            <p>Toll free:+91 8151000080 / 8217268018 (9:AM to 8:PM IST)</p>
+            <p>Email:trainings@achieversit.comm Head Office:#1, 4th Main Rd, Extension, Ayyappa Layout, Chandra Layout, Marathahalli, Bengaluru</p>
+            <p>Branches:Bengaluru | Hyderabad | Chennai | Pune | Mumbai | Counting+</p>
+        </div>
+    </footer>
+
+    <section style="display: flex;">
+        <div style="background-color: aqua; flex: 1; flex-grow: 3; flex-shrink: 2;">Box1</div>
+        <div style="background-color: rgb(0, 255, 98); flex: 1; ">Box2</div>
+        <div style="background-color: rgb(76, 0, 255); flex: 1;">Box3</div>
+    </section>
+</body>
+</html>
