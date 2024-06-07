@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Sections Layout</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic styles for the sections */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px; 
+            
+        }
+
+        .section {
+            flex: 1 1 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            border: 1px solid #ddd;
+            background-color: white;
+        }
+
+        .anchor a {
+            text-decoration: none;
+        }
+
+        .anchor {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .main-container h2 {
+            text-align: center;
+            
+        }
+
+        
+        /* #section1 {
+            background-color: #f4f4f4;
+        }
+
+        #section2 {
+            background-color: #e4e4e4;
+        }
+
+        #section3 {
+            background-color: #d4d4d4;
+        } */
+
+       
+        @media (min-width: 600px) {
+            .section {
+                flex: 1 1 calc(25% - 10px);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .section {
+                flex: 1 1 calc(33.33% - 10px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="main-container">
+        <h2>Man & Woman Fashion</h2>
+        <div class="container">
+            <section class="section" id="section1">
+                <div>
+                    <p>Shoes</p>
+                    <p>Price: $1000</p>
+                    <img src="https://cdn.pixabay.com/photo/2021/03/08/12/31/oxford-shoes-6078993_1280.jpg" alt="Shoes" style="width: 100%;">
+                    <div class="anchor">
+                        <a href="#">Buy Now</a>
+                        <a href="#">See More</a>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="section2">
+                <div>
+                    <p>Shoes</p>
+                    <p>Price: $1000</p>
+                    <img src="https://cdn.pixabay.com/photo/2021/03/08/12/31/oxford-shoes-6078993_1280.jpg" alt="Shoes" style="width: 100%;">
+                    <div class="anchor">
+                        <a href="#">Buy Now</a>
+                        <a href="#">See More</a>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="section3">
+                <div>
+                    <p>Shoes</p>
+                    <p>Price: $1000</p>
+                    <img src="https://cdn.pixabay.com/photo/2021/03/08/12/31/oxford-shoes-6078993_1280.jpg" alt="Shoes" style="width: 100%;">
+                    <div class="anchor">
+                        <a href="#">Buy Now</a>
+                        <a href="#">See More</a>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+    </section>
+    <section class="main-container">
+        <h2>Man & Woman Fashion</h2>
+        <div class="container">
+            <section class="section" id="section1">
+                <div>
+                    <p>Shoes</p>
+                    <p>Price: $1000</p>
+                    <img src="https://cdn.pixabay.com/photo/2021/03/08/12/31/oxford-shoes-6078993_1280.jpg" alt="Shoes" style="width: 100%;">
+                    <div class="anchor">
+                        <a href="#">Buy Now</a>
+                        <a href="#">See More</a>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="section2">
+                <div>
+                    <p>Shoes</p>
+                    <p>Price: $1000</p>
+                    <img src="https://cdn.pixabay.com/photo/2021/03/08/12/31/oxford-shoes-6078993_1280.jpg" alt="Shoes" style="width: 100%;">
+                    <div class="anchor">
+                        <a href="#">Buy Now</a>
+                        <a href="#">See More</a>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="section3">
+                <div>
+                    <p>Shoes</p>
+                    <p>Price: $1000</p>
+                    <img src="https://cdn.pixabay.com/photo/2021/03/08/12/31/oxford-shoes-6078993_1280.jpg" alt="Shoes" style="width: 100%;">
+                    <div class="anchor">
+                        <a href="#">Buy Now</a>
+                        <a href="#">See More</a>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+    </section>
+    <section class="main-container">
+        <h2>Man & Woman Fashion</h2>
+        <div class="container">
+            <section class="section" id="section1">
+                <div>
+                    <p>Shoes</p>
+                    <p>Price: $1000</p>
+                    <img src="https://cdn.pixabay.com/photo/2021/03/08/12/31/oxford-shoes-6078993_1280.jpg" alt="Shoes" style="width: 100%;">
+                    <div class="anchor">
+                        <a href="#">Buy Now</a>
+                        <a href="#">See More</a>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="section2">
+                <div>
+                    <p>Shoes</p>
+                    <p>Price: $1000</p>
+                    <img src="https://cdn.pixabay.com/photo/2021/03/08/12/31/oxford-shoes-6078993_1280.jpg" alt="Shoes" style="width: 100%;">
+                    <div class="anchor">
+                        <a href="#">Buy Now</a>
+                        <a href="#">See More</a>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="section3">
+                <div>
+                    <p>Shoes</p>
+                    <p>Price: $1000</p>
+                    <img src="https://cdn.pixabay.com/photo/2021/03/08/12/31/oxford-shoes-6078993_1280.jpg" alt="Shoes" style="width: 100%;">
+                    <div class="anchor">
+                        <a href="#">Buy Now</a>
+                        <a href="#">See More</a>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+    </section>
+</body>
+</html>

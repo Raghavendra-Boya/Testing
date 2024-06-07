@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Flag with Rotating Ashoka Chakra</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+       body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.flag {
+    width: 300px;
+    border: 1px solid #000;
+}
+
+.flag-line {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.flag-line.saffron {
+    background-color: #FF9933;
+}
+
+.flag-line.white {
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+.flag-line.green {
+    background-color: #138808;
+}
+
+.ashoka-chakra {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.spokes {
+    position: absolute;
+    width: 2px;
+    height: 50%;
+    background-color: #000080;
+    transform-origin: bottom center;
+}
+
+.spokes:nth-child(1) { transform: rotate(0deg); }
+.spokes:nth-child(2) { transform: rotate(15deg); }
+.spokes:nth-child(3) { transform: rotate(30deg); }
+.spokes:nth-child(4) { transform: rotate(45deg); }
+.spokes:nth-child(5) { transform: rotate(60deg); }
+.spokes:nth-child(6) { transform: rotate(75deg); }
+.spokes:nth-child(7) { transform: rotate(90deg); }
+.spokes:nth-child(8) { transform: rotate(105deg); }
+.spokes:nth-child(9) { transform: rotate(120deg); }
+.spokes:nth-child(10) { transform: rotate(135deg); }
+.spokes:nth-child(11) { transform: rotate(150deg); }
+.spokes:nth-child(12) { transform: rotate(165deg); }
+.spokes:nth-child(13) { transform: rotate(180deg); }
+.spokes:nth-child(14) { transform: rotate(195deg); }
+.spokes:nth-child(15) { transform: rotate(210deg); }
+.spokes:nth-child(16) { transform: rotate(225deg); }
+.spokes:nth-child(17) { transform: rotate(240deg); }
+.spokes:nth-child(18) { transform: rotate(255deg); }
+.spokes:nth-child(19) { transform: rotate(270deg); }
+.spokes:nth-child(20) { transform: rotate(285deg); }
+.spokes:nth-child(21) { transform: rotate(300deg); }
+.spokes:nth-child(22) { transform: rotate(315deg); }
+.spokes:nth-child(23) { transform: rotate(330deg); }
+.spokes:nth-child(24) { transform: rotate(345deg); }
+
+.ashoka-chakra:hover .spokes {
+    transition: transform 0.3s;
+}
+
+.spokes:hover {
+    transform: scale(1.5);
+}
+
+.flag-line.white:hover {
+    transform: scale(1.1);
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="flag">
+        <div class="flag-line saffron"></div>
+        <div class="flag-line white">
+            <div class="ashoka-chakra">
+                <!-- Creating 24 spokes for the Ashoka Chakra -->
+                <div class="spokes"></div>
+                <div class="spokes"></div>
+                <div class="spokes"></div>
+                <div class="spokes"></div>
+                <div class="spokes"></div>
+                <div class="spokes"></div>
+                <div class="spokes"></div>
+                <div class="spokes"></div>
+                <div class="spokes"></div>
+                <div class="spokes"></div>
+                <div class="spokes"></div>
+                <div class="spokes"></div>
+                <div class="spokes"></div>
+                <div class="spokes"></div>
+                <div class="spokes"></div>
+                <div class="spokes"></div>
+                <div class="spokes"></div>
+                <div class="spokes"></div>
+                <div class="spokes"></div>
+                <div class="spokes"></div>
+                <div class="spokes"></div>
+                <div class="spokes"></div>
+                <div class="spokes"></div>
+                <div class="spokes"></div>
+            </div>
+        </div>
+        <div class="flag-line green"></div>
+    </div>
+</body>
+</html>

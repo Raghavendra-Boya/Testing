@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Card with Image</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    padding: 20px;
+    padding-top: 70px; /* Adjust to make space for the image */
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.image-container {
+    position: absolute;
+    /* top: -50px;
+    left: 50%;
+    transform: translateX(-50%); */
+    top: -50px;
+    left: 33%;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+    background-color: #ffffff;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-content {
+    margin-top: 30px; /* Adjust to make space between image and text */
+}
+
+.card-content h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+.card-content p {
+    margin: 5px 0;
+    color: #555555;
+}
+
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <div class="image-container">
+                <img src="https://via.placeholder.com/150" alt="Profile Image">
+            </div>
+            <div class="card-content">
+                <h2>John Doe</h2>
+                <p>Role: Web Developer</p>
+                <p>Location: New York, USA</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
